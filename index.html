@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel=" icon"
+      href="/assets/images/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="assets/sass/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="form">
+        <div class="sidebar">
+          <ol class="steps">
+            <li class="item">
+              <button
+                class="step active"
+                id="info"
+                aria-label="Your info"
+                aria-expanded="false"
+              >
+                <strong class="num">1</strong>
+                <div class="box">
+                  <p class="shortcut">step 1</p>
+                  <h6 class="title">Your info</h6>
+                </div>
+              </button>
+            </li>
+            <li class="item">
+              <button
+                class="step disabled"
+                id="plan"
+                aria-label="Select plan"
+                aria-disabled="true"
+                aria-expanded="false"
+              >
+                <strong class="num">2</strong>
+                <div class="box">
+                  <p class="shortcut">step 2</p>
+                  <h6 class="title">Select plan</h6>
+                </div>
+              </button>
+            </li>
+            <li class="item">
+              <button
+                class="step disabled"
+                id="addons"
+                aria-label="Add-ons"
+                aria-disabled="true"
+                aria-expanded="false"
+              >
+                <strong class="num">3</strong>
+                <div class="box">
+                  <p class="shortcut">step 3</p>
+                  <h6 class="title">Add-ons</h6>
+                </div>
+              </button>
+            </li>
+            <li class="item">
+              <button
+                class="step disabled"
+                id="summary"
+                aria-label="Summary"
+                aria-disabled="true"
+                aria-expanded="false"
+              >
+                <strong class="num">4</strong>
+                <div class="box">
+                  <p class="shortcut">step 4</p>
+                  <h6 class="title">Summary</h6>
+                </div>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="display">
+          <div class="data"></div>
+          <div class="controls">
+            <button
+              type="button"
+              class="control back disabled hidden"
+              aria-label="Go Back"
+              aria-disabled="true"
+            >
+              Go Back</button
+            ><button type="button" class="control next" aria-label="Next Step">
+              Next Step
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="margin"></div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
